@@ -1,4 +1,3 @@
-require('dotenv').config();
 const { TwitterApi } = require('twitter-api-v2');
 
 const client = new TwitterApi({
@@ -8,16 +7,19 @@ const client = new TwitterApi({
   accessSecret: process.env.TWITTER_ACCESS_SECRET
 });
 
-async function postTweet() {
-  const text = `Live from CodedVibez! 🚀 Drop a like, comment your fave code tip, or follow for daily vibes! https://your-codedvibez-site.com #WebDev #Coding`;
-  
+async function postVibez() {
+  const text = `CodedVibez AUTO BOOST!  
+Like = Coding tonight  
+Comment = Your language  
+RT = Spread the vibe!  
+https://x.com/CodedPanel?t=yEHGZ2OhZOblUI9Kfw2iHQ&s=09`;
+
   try {
     const { data } = await client.v2.tweet(text);
-    console.log("Tweet posted! ID:", data.id);
-    console.log("Check X for likes/views/comments boost!");
-  } catch (error) {
-    console.error("Error:", error.code, error.message);
+    console.log("POSTED: https://x.com/user/status/" + data.id);
+  } catch (e) {
+    console.error("ERROR:", e.code, e.message);
   }
 }
 
-postTweet();
+postVibez();
