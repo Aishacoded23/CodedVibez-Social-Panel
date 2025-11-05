@@ -1,0 +1,47 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment variables (API keys, secrets)
+.env
+.env.local
+.env.*.local
+.env.example
+
+# Logs
+*.log
+logs/
+npm-debug.log
+yarn-error.log
+
+# Build & dist
+dist/
+build/
+tmp/
+temp/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# GitHub Actions / CI
+.github/
+!/.github/workflows/
+
+# Optional: ignore test coverage
+coverage/
