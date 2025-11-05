@@ -1,0 +1,12 @@
+{
+  "name": "codedvibez-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "twitter-api-v2": "^1.16.2",
+    "dotenv": "^16.4.5"
+  }
+}
